@@ -1,5 +1,3 @@
-const NodeCache = require("node-cache");
-const myCache = new NodeCache();
 const cache = require('node-file-cache').create();
 import {loadDB} from '../../src/firebase';
 
