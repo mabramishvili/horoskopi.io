@@ -27,8 +27,6 @@ function SimpleTabs(props) {
     const router = useRouter();
     const { sign } = router.query;
 
-    console.log("data", props);
-
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
@@ -117,8 +115,7 @@ export async function getServerSideProps(context) {
             daily: res.daily,
             weekly: res.weekly,
             monthly: res.monthly,
-            yearly: res.yearly,
-            test: res.test
+            yearly: res.yearly
         }
     };
 }
