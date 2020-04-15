@@ -7,6 +7,8 @@ import styles from './index.module.css'
 import ZodiacGrid from "../components/ZodiacGridItem";
 import BlockUi from 'react-block-ui';
 
+
+
 export default function Index() {
 
     const [loading, setLoading] = useState(false);
