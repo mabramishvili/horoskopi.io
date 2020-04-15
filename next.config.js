@@ -1,5 +1,5 @@
 module.exports = {
     env: {
-        host: 'http://localhost:3000',
+        host: 'https://horoskopi-airosv780.now.sh',
     },
 };
