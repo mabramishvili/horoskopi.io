@@ -11,6 +11,7 @@ import {loadDB} from '../../src/firebase';
 //     life: 70
 // };
 
+
 export default async (req, res) => {
     const db = await loadDB();
     let daily = [], weekly = [], monthly = [], yearly = [];
