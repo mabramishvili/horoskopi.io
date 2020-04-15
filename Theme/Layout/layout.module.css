@@ -1,0 +1,9 @@
+.container{
+    padding-top: 50px;
+    min-height: 700px;
+}
+.footer{
+    margin-top: 50px;
+    border-top: 1px solid lightgray;
+    padding-top: 19px;
+}

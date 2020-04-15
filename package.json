@@ -1,0 +1,27 @@
+{
+  "name": "nextjs",
+  "version": "4.0.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "latest",
+    "clsx": "latest",
+    "firebase": "^7.14.0",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "latest",
+    "node-cache": "^5.1.0",
+    "node-file-cache": "^1.0.2",
+    "prop-types": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "swr": "^0.2.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest"
+  },
+  "devDependencies": {
+    "@material-ui/icons": "^4.9.1"
+  }
+}

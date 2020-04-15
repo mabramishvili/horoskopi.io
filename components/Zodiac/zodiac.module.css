@@ -1,0 +1,36 @@
+.imageContainer{
+    text-align: center;
+}
+.zodiacContainer{
+    display: block;
+    cursor: pointer;
+    opacity: 1;
+}
+.zodiacContainer:hover{
+    opacity: 0.7;
+    transform: scale(1.02);
+}
+.arrowContainer{
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+.arrow{
+    width: 70px;
+    height: 7px;
+}
+.image{
+    width: 150px;
+    height: 150px;
+}
+.title{
+    text-align: center;
+    font-weight: normal;
+    /*font-family: sylafen_bpg, sans-serif!important;*/
+}
+.date{
+    text-align: center;
+    font-size: 11px;
+    margin-top: -5px;
+    font-weight: bold;
+}
