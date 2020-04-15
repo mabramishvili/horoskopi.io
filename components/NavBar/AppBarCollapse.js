@@ -29,11 +29,11 @@ const styles = theme => ({
 const AppBarCollapse = props => (
     <div className={props.classes.root}>
         <ButtonAppBarCollapse>
-            <MenuItem className="bpg">მთავარი</MenuItem>
+            <Link href={"/"}><a href={"/"}><MenuItem className="bpg">მთავარი</MenuItem></a></Link>
             <MenuItem className="bpg">შეთავსება</MenuItem>
         </ButtonAppBarCollapse>
         <div className={props.classes.buttonBar} id="appbar-collapse">
-            <Link href={"/"}><Button color="inherit" className="bpg">მთავარი</Button></Link>
+            <Link href={"/"}><a href={"/"}><Button color="inherit" className="bpg">მთავარი</Button></a></Link>
             <Button color="inherit" className="bpg">შეთავსება</Button>
         </div>
     </div>
