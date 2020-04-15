@@ -9,7 +9,7 @@ export const Index = (props) => (
     <div>
         <Head>
             <title>ყოველდღიური ჰოროსკოპი</title>
-            <link rel="shortcut icon" href="/img/icons/favicon.png" />
+            <link rel="shortcut icon" href="/img/icons/hfavicon.png" />
         </Head>
         <NavBar/>
         <Container maxWidth="lg">
