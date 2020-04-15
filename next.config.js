@@ -1,5 +1,5 @@
 module.exports = {
     env: {
-        host: 'https://horoskopi-airosv780.now.sh',
+        host: 'https://horoskopi.mabramishvili.now.sh',
     },
 };
