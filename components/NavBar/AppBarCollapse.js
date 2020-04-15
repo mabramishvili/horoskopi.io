@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, MenuItem } from "@material-ui/core";
 import { withStyles } from "@material-ui/core/styles";
-import ButtonAppBarCollapse from "./ButtonAppBarCollapse";
 import Link from "next/link";
+import ButtonAppBarCollapse from "./ButtonAppbarCollapse";
 
 const styles = theme => ({
     root: {
