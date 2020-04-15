@@ -37,6 +37,7 @@ export default async (req, res) => {
         yearly: yearly
     };
 
+    res.setHeader('Cache-Control', 's-maxage=6000, stale-while-revalidate=60');
     res.status(200).json(rs);
 
 }

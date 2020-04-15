@@ -106,7 +106,7 @@ function SimpleTabs(props) {
     );
 }
 
-export async function getServerSideProps(context) {
+export async function getStaticProps() {
     let host = process.env.host;
     let res = await fetch(host + '/api/signs');
     res = await res.json();
@@ -117,6 +117,26 @@ export async function getServerSideProps(context) {
             monthly: res.monthly,
             yearly: res.yearly
         }
+    };
+}
+
+export async function getStaticPaths() {
+    return {
+        paths: [
+            { params: { sign: 'aries' } },
+            { params: { sign: 'taurus' } },
+            { params: { sign: 'gemini' } },
+            { params: { sign: 'cancer' } },
+            { params: { sign: 'leo' } },
+            { params: { sign: 'virgo' } },
+            { params: { sign: 'libra' } },
+            { params: { sign: 'scorpio' } },
+            { params: { sign: 'saggitarius' } },
+            { params: { sign: 'capricorn' } },
+            { params: { sign: 'aquarius' } },
+            { params: { sign: 'pisces' } }
+        ],
+        fallback: false
     };
 }
 
