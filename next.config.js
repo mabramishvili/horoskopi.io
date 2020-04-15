@@ -1,5 +1,9 @@
 module.exports = {
     env: {
-        host: 'https://horoskopi.mabramishvili.now.sh',
+        host: 'http://localhost:3000',
+        // host: 'https://horoskopi.mabramishvili.now.sh',
     },
+    serverRuntimeConfig: {
+        PROJECT_ROOT: __dirname
+    }
 };

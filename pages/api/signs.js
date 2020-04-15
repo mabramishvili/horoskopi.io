@@ -1,5 +1,11 @@
-const cache = require('node-file-cache').create();
+import path from 'path';
 import {loadDB} from '../../src/firebase';
+import getConfig from 'next/config';
+const { serverRuntimeConfig } = getConfig();
+
+const cache = require('node-file-cache').create(
+    {file: path.join(serverRuntimeConfig.PROJECT_ROOT, './tmp/test.txt')}
+);
 
 const options = {
     life: 70
