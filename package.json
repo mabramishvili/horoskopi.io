@@ -12,6 +12,7 @@
     "node-file-cache": "^1.0.2",
     "prop-types": "latest",
     "react": "latest",
+    "react-block-ui": "^1.3.3",
     "react-dom": "latest",
     "swr": "^0.2.0"
   },

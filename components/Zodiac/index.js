@@ -29,12 +29,14 @@ function Zodiac(props) {
         </div>
     );
     const link = (
-        <Link href={`sign/${props.linkTo}`}>
-            {content}
-        </Link>
+        <div onClick={props.click || false}>
+            <Link href={`sign/${props.linkTo}`}>
+                {content}
+            </Link>
+        </div>
     );
 
-    return props.linkTo?link:noLink;
+    return props.linkTo ? link : noLink;
 }
 
 Zodiac.propTypes = {
