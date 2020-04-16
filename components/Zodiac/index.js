@@ -30,7 +30,7 @@ function Zodiac(props) {
     );
     const link = (
         <div onClick={props.click || false}>
-            <Link href={`sign/${props.linkTo}`}>
+            <Link href="/sign/[sign]" as={`/sign/${props.linkTo}`}>
                 {content}
             </Link>
         </div>

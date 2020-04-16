@@ -13,6 +13,7 @@ import {loadDB} from '../../src/firebase';
 
 
 export default async (req, res) => {
+
     const db = await loadDB();
     let daily = [], weekly = [], monthly = [], yearly = [];
     const dquery = await db.firestore().collection('daily').get();
