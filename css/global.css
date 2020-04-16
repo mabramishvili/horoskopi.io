@@ -60,3 +60,6 @@ a:hover {
         bottom: 2px !important;
     }
 }
+.block-ui-container{
+    cursor: inherit!important;
+}
