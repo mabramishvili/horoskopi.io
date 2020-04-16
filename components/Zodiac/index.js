@@ -5,7 +5,7 @@ import Link from "next/link";
 
 function Zodiac(props) {
     const content = (
-        <a className={styles.zodiacContainer} href={`sign/${props.linkTo}`}>
+        <a className={styles.zodiacContainer}>
             <div className={styles.imageContainer}>
                 <img src={'/img/zodiacs/' + props.image} alt={"aries"} className={styles.image}/>
             </div>
@@ -30,7 +30,7 @@ function Zodiac(props) {
     );
     const link = (
         <div onClick={props.click || false}>
-            <Link href="/sign/[sign]" as={`/sign/${props.linkTo}`}>
+            <Link href={`sign/${props.linkTo}`}>
                 {content}
             </Link>
         </div>
