@@ -23,7 +23,7 @@ function a11yProps(index) {
 
 function SimpleTabs(props) {
     const classes = useStyles();
-    const [value, setValue] = React.useState(1);
+    const [value, setValue] = React.useState(2);
     const router = useRouter();
     const { sign } = router.query;
 
@@ -50,8 +50,8 @@ function SimpleTabs(props) {
         <Layout>
 
             <Head>
-                <title>{titles[sign]} ჰოროსკოპი</title>
-                <link rel="shortcut icon" href="/img/icons/favicon.png" />
+                <title>{titles[sign]} - დღის ჰოროსკოპი</title>
+                <meta name="description" content={titles[sign] + ' - დღის ჰოროსკოპი, ყოველდღიური ჰოროსკოპი' } />
             </Head>
 
             <Link href={"/"}>
@@ -75,12 +75,12 @@ function SimpleTabs(props) {
 
                 <AppBar position="static" className={classes.tabBar}>
                     <Tabs value={value} onChange={handleChange} aria-label="simple tabs example">
-                        <Tab className={classes.tab} label="გუშინ" {...a11yProps(0)} />
-                        <Tab className={classes.tab} label="დღეს" {...a11yProps(1)} />
-                        <Tab className={classes.tab} label="ხვალ" {...a11yProps(2)} />
-                        <Tab className={classes.tab} label="ამ კვირაში" {...a11yProps(3)} />
-                        <Tab className={classes.tab} label="ამ თვეში" {...a11yProps(4)} />
-                        <Tab className={classes.year} label="2020" {...a11yProps(5)} />
+                        <Tab className={classes.tab} label="გუშინწინ" {...a11yProps(0)} />
+                        <Tab className={classes.tab} label="გუშინ" {...a11yProps(1)} />
+                        <Tab className={classes.tab} label="დღეს" {...a11yProps(2)} />
+                        {/*<Tab className={classes.tab} label="ამ კვირაში" {...a11yProps(3)} />*/}
+                        <Tab className={classes.tab} label="ამ თვეში" {...a11yProps(3)} />
+                        <Tab className={classes.year} label="2020" {...a11yProps(4)} />
                     </Tabs>
                 </AppBar>
                 <TabPanel value={value} index={0} className={classes.tabPanel}>
@@ -92,13 +92,13 @@ function SimpleTabs(props) {
                 <TabPanel value={value} index={2} className={classes.tabPanel}>
                     {props.daily[0][sign]}
                 </TabPanel>
+                {/*<TabPanel value={value} index={3} className={classes.tabPanel}>*/}
+                {/*    {props.weekly[0][sign]}*/}
+                {/*</TabPanel>*/}
                 <TabPanel value={value} index={3} className={classes.tabPanel}>
-                    {props.weekly[0][sign]}
-                </TabPanel>
-                <TabPanel value={value} index={4} className={classes.tabPanel}>
                     {props.monthly[0][sign]}
                 </TabPanel>
-                <TabPanel value={value} index={5} className={classes.tabPanel}>
+                <TabPanel value={value} index={4} className={classes.tabPanel}>
                     {props.yearly[0][sign]}
                 </TabPanel>
             </div>

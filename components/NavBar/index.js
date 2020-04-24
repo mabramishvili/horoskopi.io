@@ -46,7 +46,7 @@ function NavBar(props) {
                                 aria-label="Menu"
                                 className={classes.toggleDrawer}
                             >
-                                <HomeIcon />
+                                <img src={'/img/icons/hfavicon.png'} alt={"home"} style={{width: '25px'}}/>
                             </IconButton>
                         </a>
                     </Link>

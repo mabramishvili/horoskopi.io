@@ -8,8 +8,15 @@ import Grid from "@material-ui/core/Grid";
 export const Index = (props) => (
     <div>
         <Head>
-            <title>ყოველდღიური ჰოროსკოპი</title>
+            <title>დღის ჰოროსკოპი, ყოველდღიური ჰოროსკოპი</title>
+            <meta name="description" content="დღის ჰოროსკოპი, ზოდიაქო, ყოველდღიური ჰოროსკოპი ყველა ზოდიაქოს ნიშნისთვის" />
+            <meta property="og:title" content="დღის ჰოროსკოპი, ყოველდღიური ჰოროსკოპი" />
+            <meta property="og:description" content="დღის ჰოროსკოპი, ზოდიაქო, ყოველდღიური ჰოროსკოპი ყველა ზოდიაქოს ნიშნისთვის" />
+            <meta property="og:url" content="https://horoskopi.io" />
+            <meta property="og:image" content="https://horoskopi.io/img/horoskopi.jpg" />
+            <meta property="og:site_name" content="HOROSKOPI.IO" />
             <link rel="shortcut icon" href="/img/icons/hfavicon.png" />
+            <link rel="apple-touch-icon" href="/img/icons/hfavicon.png"/>
         </Head>
         <NavBar/>
         <Container maxWidth="lg">

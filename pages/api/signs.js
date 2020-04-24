@@ -20,10 +20,10 @@ export default async (req, res) => {
     dquery.forEach(doc => {
         daily.push(doc.data())
     });
-    const wquery = await db.firestore().collection('weekly').get();
-    wquery.forEach(doc => {
-        weekly.push(doc.data())
-    });
+    // const wquery = await db.firestore().collection('weekly').get();
+    // wquery.forEach(doc => {
+    //     weekly.push(doc.data())
+    // });
     const mquery = await db.firestore().collection('monthly').get();
     mquery.forEach(doc => {
         monthly.push(doc.data())
@@ -39,7 +39,7 @@ export default async (req, res) => {
         yearly: yearly
     };
 
-    res.setHeader('Cache-Control', 's-maxage=10800, stale-while-revalidate=12000');
+    res.setHeader('Cache-Control', 's-maxage=1800, stale-while-revalidate=12000');
     res.status(200).json(rs);
 
 }
